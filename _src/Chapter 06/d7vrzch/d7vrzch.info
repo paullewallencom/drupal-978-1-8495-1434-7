@@ -1,0 +1,12 @@
+; $Id:
+name = Zip Code Handler
+description = Provides a view handler to format a field as a zip code
+package = D7 Views Recipes
+; Handler
+files[] = d7vrzch.module
+files[] = d7vrzch_handler_field_zip_code.inc
+files[] = d7vrzch_views.inc
+
+version = "7.x-1.0"
+core = "7.x"
+php = 5.2

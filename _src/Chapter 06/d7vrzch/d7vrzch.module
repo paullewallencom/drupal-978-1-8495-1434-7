@@ -1,0 +1,17 @@
+<?php
+/**
+ * Implements hook_views_api().
+ */
+function d7vrzch_views_api() {
+  return array(
+    'api' => 2,
+  );
+}
+/**
+ * Implements hook_views_query_alter
+ */
+function d7vrzch_views_query_alter(&$view, &$query) {
+  if ($view->name == 'test') {
+    drupal_set_message('<pre>'.print_r($query,1).'</pre>');
+  }
+} 
